@@ -3,24 +3,58 @@
 2. Data Retrieval from Sources (APIs, Downloads, etc.)
     |
 3. Data Preprocessing
-    |--- Genomic Datasets (e.g., GenBank, Ensembl)
+    |--- Genomic Datasets
     |       |--- Parse FASTA and BED files
     |       |--- Extract gene sequences and annotations
+    |       |--- Quality control (sequence validity, annotation consistency)
     |
-    |--- Medical Datasets (e.g., EHR, disease databases)
+    |--- Medical Datasets
     |       |--- Extract relevant patient and clinical data
     |       |--- Normalize and anonymize data
+    |       |--- Handle missing data and outliers
     |
-    |--- Molecular Information (e.g., PubChem)
+    |--- Molecular Information
             |--- Extract molecular structures
             |--- Convert SMILES/InChI to suitable representations
+            |--- Handle missing or incomplete molecular data
     |
 4. Data Integration and Fusion
+    |--- Match and merge data across sources (e.g., gene IDs)
+    |--- Link molecular information with genetic and clinical data
     |
 5. Feature Engineering
+    |--- Generate derived features (e.g., sequence motifs, structural properties)
+    |--- Embed categorical data (e.g., gene types, medical diagnoses)
+    |--- Normalize continuous data (e.g., gene expression levels, clinical measurements)
     |
-6. Data Splitting (Training, Validation, Testing)
+6. Data Splitting
+    |--- Divide data into training, validation, and testing sets
+    |--- Ensure balanced distribution of classes and conditions
     |
-7. Data Format Conversion (Tensor, Numpy, etc.)
+7. Data Format Conversion
+    |--- Convert data into appropriate formats for model input
+    |--- Represent sequences as numerical tensors
+    |--- Transform molecular structures into graph or matrix representations
     |
 8. Model Training and Validation
+    |--- Train the hybrid neural network model
+    |--- Validate model using cross-validation and evaluation metrics
+    |
+9. Iterative Optimization
+    |--- Analyze model performance and errors
+    |--- Adjust preprocessing steps and model architecture
+    |--- Fine-tune hyperparameters based on validation results
+    |
+10. Model Deployment
+    |--- Deploy the trained model in a suitable environment
+    |--- Integrate with user interface or application
+    |
+11. Real-world Application
+    |--- Provide input data (genomic, medical, molecular)
+    |--- Model generates RNA-based therapeutic sequences
+    |--- Validate therapeutic candidates using experimental data
+    |
+12. Feedback Loop
+    |--- Collect user feedback on generated therapeutics
+    |--- Incorporate user feedback into model improvement
+    |--- Update and retrain the model periodically
