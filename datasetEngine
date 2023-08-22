@@ -1,0 +1,26 @@
+1. Data Source Selection
+    |
+2. Data Retrieval from Sources (APIs, Downloads, etc.)
+    |
+3. Data Preprocessing
+    |--- Genomic Datasets (e.g., GenBank, Ensembl)
+    |       |--- Parse FASTA and BED files
+    |       |--- Extract gene sequences and annotations
+    |
+    |--- Medical Datasets (e.g., EHR, disease databases)
+    |       |--- Extract relevant patient and clinical data
+    |       |--- Normalize and anonymize data
+    |
+    |--- Molecular Information (e.g., PubChem)
+            |--- Extract molecular structures
+            |--- Convert SMILES/InChI to suitable representations
+    |
+4. Data Integration and Fusion
+    |
+5. Feature Engineering
+    |
+6. Data Splitting (Training, Validation, Testing)
+    |
+7. Data Format Conversion (Tensor, Numpy, etc.)
+    |
+8. Model Training and Validation
